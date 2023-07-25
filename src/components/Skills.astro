@@ -1,0 +1,62 @@
+---
+import Icon from './Icon.astro';
+---
+
+<section class="box skills">
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="controller" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Gaming for Good:</h2>
+		<p>Karma Communities provides a fun, engaging, and safe environment for players of all types to get together and enjoy their love of video games.</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="trophy" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Your favorite games:</h2>
+		<p>DarkRP, G-Arena, Rust, Minecraft, IW5, T4MP/T4ZM, T5MP/T5ZM, T6MP/T6ZM, and more to come. You can be sure you'll always have something to play in Karma Communities!</p>
+	</div>
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="strategy" color="var(--accent-regular)" size="2.5rem" gradient />
+		<h2>Visit our communities!</h2>
+		<p>You can join our Discord channel to get more information about what all we offer to players: <a href="https://discord.gg/kJrftZN94p">Karma Communities Discord</a></p>
+	</div>
+</section>
+
+<style>
+	.box {
+		border: 1px solid var(--gray-800);
+		border-radius: 0.75rem;
+		padding: 1.5rem;
+		background-color: var(--gray-999_40);
+		box-shadow: var(--shadow-sm);
+	}
+
+	.skills {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+	}
+
+	.skills h2 {
+		font-size: var(--text-lg);
+	}
+
+	.skills p {
+		color: var(--gray-400);
+	}
+
+	@media (min-width: 50em) {
+		.box {
+			border-radius: 1.5rem;
+			padding: 2.5rem;
+		}
+
+		.skills {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 5rem;
+		}
+
+		.skills h2 {
+			font-size: var(--text-2xl);
+		}
+	}
+</style>
